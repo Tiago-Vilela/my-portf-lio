@@ -1,4 +1,4 @@
-const navigation = document.querySelector(#navigation)
+const navigation = document.querySelector('#navigation')
 window.addEventListener('scroll', onScroll)
 
 
