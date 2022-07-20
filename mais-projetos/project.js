@@ -1,29 +1,23 @@
 const navigation = document.querySelector('#navigation')
 window.addEventListener('scroll', onScroll)
 
-const buttonProject = document.querySelector('[data-js="button-project"]')
-buttonProject.addEventListener('click' , clickButonProject);
-
-function clickButonProject (event) {
-  window.open('./mais-projetos/projects.html')
-} 
-
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
-
+  
 }
+
 
 function showNavOnScroll() {
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    navigation.classList.add('scroll');
   } else {
-    navigation.classList.remove('scroll')
+    navigation.classList.remove('scroll');
   }
 }
 
 function showBackToTopButtonOnScroll() {
-  if (scrollY > 550) {
+  if (scrollY > 450) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
